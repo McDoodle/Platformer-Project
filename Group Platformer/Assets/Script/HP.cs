@@ -11,7 +11,7 @@ public class HP : MonoBehaviour {
     public Slider HealthSlider;
     public Slider HealthSlider2;
     public Text healthText;
-    public int health = 10;
+    public int health = 4;
     float timer = 0.0f;
     public AudioClip soundToPlay;
     void Start()
@@ -21,7 +21,7 @@ public class HP : MonoBehaviour {
         //HealthSlider2.GetComponent<Slider>().value = health;
         healthText.GetComponent<Text>().text = "Health: " + health;
         //PlayerPrefs.SetInt("Lives", lives);
-        lives = PlayerPrefs.GetInt("Loves");
+        lives = PlayerPrefs.GetInt("Lives");
     }
     private void Update()
     {
@@ -32,10 +32,10 @@ public class HP : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy" && timer > 1.0)
         {
             timer = 0;
-            health -= 4;
+            health -= 1;
             Camera.main.GetComponent<AudioSource>().PlayOneShot(soundToPlay);
             healthText.GetComponent<Text>().text = "Health: " + health;
-            HealthSlider.GetComponent<Slider>().value = health;
+            //HealthSlider.GetComponent<Slider>().value = health;
             //HealthSlider2.GetComponent<Slider>().value = health;
         }
         if (health <= 0)
@@ -51,7 +51,7 @@ public class HP : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy" && timer > 1.0 && yVelocity >=0)
         {
             timer = 0;
-            health -= 2;
+            health -= 1;
             //healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
             //HealthSlider2.GetComponent<Slider>().value = health;
