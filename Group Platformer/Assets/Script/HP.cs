@@ -17,7 +17,7 @@ public class HP : MonoBehaviour {
     void Start()
     {
         Time.timeScale = 1;
-        HealthSlider.GetComponent<Slider>().value = health;
+        //HealthSlider.GetComponent<Slider>().value = health;
         //HealthSlider2.GetComponent<Slider>().value = health;
         healthText.GetComponent<Text>().text = "Health: " + health;
         //PlayerPrefs.SetInt("Lives", lives);
@@ -32,7 +32,7 @@ public class HP : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy" && timer > 1.0)
         {
             timer = 0;
-            health -= 5;
+            health -= 4;
             Camera.main.GetComponent<AudioSource>().PlayOneShot(soundToPlay);
             healthText.GetComponent<Text>().text = "Health: " + health;
             HealthSlider.GetComponent<Slider>().value = health;
