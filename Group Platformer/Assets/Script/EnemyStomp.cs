@@ -10,7 +10,7 @@ public class EnemyStomp : MonoBehaviour {
         if (collision.gameObject.tag == "player" && yVelocity < 0)
         {
             Destroy(gameObject);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 6));
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 60));
             Instantiate(prefab, transform.position, Quaternion.identity);
         }
     }
