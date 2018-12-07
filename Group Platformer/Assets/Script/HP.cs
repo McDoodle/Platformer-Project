@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HP : MonoBehaviour {
-    public int lives = 10;
+    public int lives = 3;
     public Text livesText;
     public GameObject PauseMenu;
     public GameObject deathCanvas;

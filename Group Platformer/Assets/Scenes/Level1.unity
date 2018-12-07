@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4facfe6bd31fc514296c20e3a001167b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 10
+  lives: 3
   livesText: {fileID: 1912494155}
   PauseMenu: {fileID: 0}
   deathCanvas: {fileID: 0}
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   player: {fileID: 0}
   soundToPlay: {fileID: 0}
   chaseSpeed: 3
-  chaseTriggerDistance: 0
+  chaseTriggerDistance: 4
   paceDirection: {x: 3, y: 0, z: 0}
   paceDistance: 3
   paceSpeed: 3
@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321302535}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6afc5bc67c3acb247819d69494717b84, type: 3}
   m_Name: 
