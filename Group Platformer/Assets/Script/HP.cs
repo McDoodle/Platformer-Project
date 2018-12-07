@@ -43,11 +43,7 @@ public class HP : MonoBehaviour {
             //HealthSlider2.GetComponent<Slider>().value = health;
 
         }
-        if (health <= 0)
-        {
-            deathCanvas.SetActive(true);
-            Time.timeScale = 0;
-        }
+        
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -68,7 +64,7 @@ public class HP : MonoBehaviour {
         
         if (health <= 0)
         {
-            if(lives == 0)
+            if(lives <= 0)
             {
                 SceneManager.LoadScene("Lose");
             }
