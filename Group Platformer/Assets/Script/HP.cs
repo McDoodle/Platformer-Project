@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HP : MonoBehaviour {
-    public int lives = 3;
     public Text livesText;
+    public int lives = 3;
     public GameObject PauseMenu;
     public GameObject deathCanvas;
     public Slider HealthSlider;
@@ -43,7 +43,7 @@ public class HP : MonoBehaviour {
             //HealthSlider2.GetComponent<Slider>().value = health;
 
         }
-        
+        livesText.GetComponent<Text>().text = "Lives: " + lives;
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -54,7 +54,7 @@ public class HP : MonoBehaviour {
             timer = 0;
             health -= 1;
             //healthText.GetComponent<Text>().text = "Health: " + health;
-            HealthSlider.GetComponent<Slider>().value = health;
+            //HealthSlider.GetComponent<Slider>().value = health;
             //HealthSlider2.GetComponent<Slider>().value = health;
         }
         if (collision.gameObject.tag == "water")
@@ -64,12 +64,13 @@ public class HP : MonoBehaviour {
         
         if (health <= 0)
         {
-            if(lives <= 0)
-            {
-                SceneManager.LoadScene("Lose");
-            }
+           
             PlayerPrefs.SetInt("Lives", lives - 1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene("Lose");
         }
     }
 }
