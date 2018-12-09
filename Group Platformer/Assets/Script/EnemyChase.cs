@@ -57,12 +57,12 @@ public class EnemyChase : MonoBehaviour {
         }
         else if (home == false)
         {
-            Debug.Log("go home?");
+            //Debug.Log("go home?");
             Vector3 homeDirection = startPosition - transform.position;
             //homeDirection.Normalize();
             if (homeDirection.magnitude < 1.0f)
             {
-                Debug.Log("I am home");
+                //Debug.Log("I am home");
                 home = true;
                 transform.position = startPosition;
                 GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
@@ -71,7 +71,7 @@ public class EnemyChase : MonoBehaviour {
             else
             {
                 //go home
-                Debug.Log("go home");
+                //Debug.Log("go home");
                 homeDirection.Normalize();
                 GetComponent<Rigidbody2D>().velocity = homeDirection * paceSpeed;
             }
@@ -79,7 +79,7 @@ public class EnemyChase : MonoBehaviour {
         }
         else
         {
-            Debug.Log("pace");
+            //Debug.Log("pace");
             Vector3 displacement = transform.position - startPosition;
             float distanceFromStart = displacement.magnitude;
             if (distanceFromStart >= paceDistance)
