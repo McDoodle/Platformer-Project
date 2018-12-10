@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class LvlExp : MonoBehaviour
-{
- 
+public class LvlExp : MonoBehaviour {
+
+    public Slider Xpslider;
+
     //current level
     public int vLevel = 1;
     //current exp amount
