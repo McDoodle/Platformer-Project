@@ -15084,35 +15084,28 @@ Transform:
   m_Father: {fileID: 675793109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &651499514
-=======
 --- !u!1 &2103477147
->>>>>>> 3513365bffab757a9b43c4040395372f8f9e784c
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 651499515}
   - component: {fileID: 651499517}
   - component: {fileID: 651499516}
   m_Layer: 5
   m_Name: Text
-=======
   - component: {fileID: 2103477148}
   - component: {fileID: 2103477149}
   m_Layer: 0
   m_Name: Pillar (1)
->>>>>>> 3513365bffab757a9b43c4040395372f8f9e784c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &651499515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15609,7 +15602,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 1571726682}
   m_CullTransparentMesh: 0
 --- !u!1 &2022359706
-=======
 --- !u!4 &2103477148
 Transform:
   m_ObjectHideFlags: 0
@@ -15670,31 +15662,26 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2132179573
->>>>>>> 3513365bffab757a9b43c4040395372f8f9e784c
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 2022359707}
   - component: {fileID: 2022359709}
   - component: {fileID: 2022359708}
   m_Layer: 5
   m_Name: Text
-=======
   - component: {fileID: 2132179574}
   - component: {fileID: 2132179575}
   m_Layer: 0
   m_Name: Pillar (2)
->>>>>>> 3513365bffab757a9b43c4040395372f8f9e784c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &2022359707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15753,7 +15740,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2022359706}
   m_CullTransparentMesh: 0
-=======
 --- !u!4 &2132179574
 Transform:
   m_ObjectHideFlags: 0
@@ -15813,4 +15799,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 3513365bffab757a9b43c4040395372f8f9e784c
