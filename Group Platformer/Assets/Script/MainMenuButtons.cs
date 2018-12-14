@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour {
-    public int lives = 10;
+    public int lives = 3;
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("PreLevel1");
         PlayerPrefs.SetInt("Lives", lives);
     }
     public void QuitGame()
